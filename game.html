@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robins Portfolio</title>
+    <link rel="shortcut icon" type="image/png" href="./assets/images/bunny.png"/>
+    <!-- !BOX ICONS -->
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- !SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <!-- !MY STYLESHEET -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body id="project">
+    <!-- !HEADER -->
+    <header class="header" id="home">
+      <nav class="navbar container">
+        <a href="./index.html" class="logo">Robins Portfolio</a>
+        <div class="navbar-buttons">
+          <button type="button" class="button icon-button menu-toggle-button">
+            <i class="bx bx-menu open-icon"></i>
+            <i class="bx bx-x close-icon"></i>
+          </button>
+          <button type="button" class="button icon-button theme-toggle-button">
+            <i class="bx bx-toggle-left theme-off"></i>
+            <i class="bx bx-toggle-right theme-on"></i>
+          </button>
+        </div>
+        <div class="menu">
+          <ul class="list">
+            <li class="list-item">
+              <a href="index.html#about-me" class="list-link">
+                <span>01</span> About me
+              </a>    
+            </li>
+            <li class="list-item">
+              <a href="index.html#skills" class="list-link">
+                <span>02</span> Skills
+              </a>    
+            </li>
+            <li class="list-item">
+              <a href="index.html#portfolio" class="list-link">
+                <span>03</span> Projects
+              </a>    
+            </li>
+            <li class="list-item">
+              <a href="index.html#contact" class="list-link">
+                <span>04</span> Contact
+              </a>    
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+    <!-- !HERO SECTION -->
+    <section class="hero section">
+      <div class="container">
+        <h1 class="title main-title">
+        JS mini-game<span class="has-sparkles-alt"></span>
+        </h1>
+        <h2>Web development (HTML, CSS, JS)</h2>
+      </div>
+    </section>
+    
+    <!-- !ABOUT THE PROJECT -->
+    <section class="section">
+      <div class="container">
+      
+        <div class="section-description d-grid about">
+          <div class="scroll-reveal-left">
+            <h2>What was the project about?</h2>
+            <p class="description">
+              I made a turn-based mini-game using HTML, CSS and Javascript. This game is loosely based on the open-world action RPG 'Genshin Impact' and 
+              involves 2 of their characters battling each other. 
+            </p>
+            <p class="description">
+              While making this game I used Javascript functions to execute the player's attacks, I used if-statements to check win-conditions, 
+              and I used a form to get input for the starting conditions of the game. 
+            </p>
+            <p class="description">
+              Try the game <a href="http://cmdplayground.nl/~robinr/eindopdracht-vanrooij.robin-narcis/" target="_blank">here</a> if you like!
+            </p>
+          </div>
+          <div class="scrol-reveal-right">
+            <div class="has-sparkles">
+              <img src="./assets/images/game-l.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- !LINKS TO GITHUB/LIVE PRODUCT/VIDEO/DR -->
+        <div class="tech-stack d-grid">
+          <a href="https://github.com/rarooij98/JS-mini-game" target="_blank">
+            <div class="tech-stack-item" data-tooltip="Github repo">
+              <i class="bx bxl-github"></i>
+            </div>
+          </a>
+          <a href="https://vimeo.com/manage/videos/744211954" target="_blank">
+            <div class="tech-stack-item" data-tooltip="Product video">
+              <i class="bx bxl-vimeo"></i>
+            </div>
+          </a>
+          <a href="http://cmdplayground.nl/~robinr/eindopdracht-vanrooij.robin-narcis/" download target="_blank">
+            <div class="tech-stack-item" data-tooltip="Live game">
+              <i class="bx bxs-game"></i>
+            </div>
+          </a>
+        </div>
+        
+      </div>
+    </section>
+    
+    <!-- !FLOW -->
+      <div class="container">
+        <div class="section-description d-grid">
+    
+          <div class="scroll-reveal-left">
+            <span class="subtitle-number has-sparkles">01</span>
+            <h2>Flow</h2>
+            <p class="description">
+              I started out by sketching the flow of the game
+            </p>
+            <p class="description">
+              Before I started coding the game, I needed to know how the game would work exactly. I made a flowchart with all the steps the players
+              could take, and when the game would end.
+            </p>
+            <p class="description">
+              Then I wrote down each step in a bit more detail. For example, I needed to specify how much HP each attack would take.
+              After that, I wrote next to each step how this could be expressed in code. I knew that for each Attack button, I would have to use an eventListener.
+              And after each attack I would need to update the textContent of a heading to be the amount of damage taken.
+            </p>
+          </div>
+          
+          <div class="scrol-reveal-right">
+            <div class="has-sparkles">     
+              <figure>
+                <img src="./assets/images/game-flow.PNG" alt="">
+                <figcaption>This chart represents the flow of the game</figcaption>
+              </figure>
+            </div>
+            <figure>
+              <img src="./assets/images/code-plan2.png" alt="">
+              <figcaption>Turning each step into code</figcaption>
+            </figure>
+          </div>
+          
+        </div>
+      </div>
+      
+      <!-- !ATTACKS -->
+      <div class="container">
+        <div class="section-description d-grid">
+        
+          <div class="scroll-reveal-left">
+            <span class="subtitle-number has-sparkles">02</span>
+            <h2>Attacks</h2>
+            <p class="description">
+              How do the players attack each other?
+            </p>
+            <p class="description">
+              Each player has 3 attacks to choose from. Each attack can be used 3 times and you can only attack once per turn. But not all attacks are the same.
+              The attack called 'Gust surge' for example, can do 30HP of damage, while 'Foreign ironwind' can only do 10HP.
+            </p>
+            <p class="description">
+              Since this is a single-player game, Player 2 cannot choose their own attacks. For this player, one of their 3 attacks is randomly chosen, using Math.random() * 3.
+            </p>
+          </div>
+          
+          <div class="scrol-reveal-right">
+            <div class="has-sparkles">
+                <figure>
+                  <img src="./assets/images/attacks.png" alt="">
+                  <figcaption>The three different attacks for player 1</figcaption>
+                </figure>
+                <figure>
+                  <img src="./assets/images/beurtp2.PNG" alt="">
+                  <figcaption>Player 2's attack is chosen at random</figcaption>
+                </figure>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+            
+      <!-- !HEALTH -->
+      <div class="container">
+        <div class="section-description d-grid">
+        
+          <div class="scroll-reveal-left">
+            <span class="subtitle-number has-sparkles">03</span>
+            <h2>Health</h2>
+            <p class="description">
+              Each player has a healthbar on the top of their screen, this is where your HP is updated after each attack or heal.
+            </p>
+            <p class="description">
+              At the start of the game you can choose your difficulty level: easy, medium or hard.
+              This determines how much health you have compared to player 2.
+              Normally, both players start out with the same amount of health: 200HP. 
+            </p>
+            <p class="description">
+              After an attack from your opponent, your HP is updated using this line of code: healthP1 -= 10.
+              Your health bar will then shrink down. This bar is a canvas element, and its width is calculated by multiplying your current percentage of health with
+              the starting width of the canvas. This means that when 50% of health is gone, the width of the canvas will also be 50% smaller.
+            </p>
+            <p class="description">              
+              The color of the canvas will  also change depending on the percentage of health left. When at least 50% of health is lost, it will turn orange. 
+              At the same time, you will see the amount of damage taken displayed on your screen in green letters. I did this by updating the textContent of a heading to be the damage taken.
+            </p>
+            <p class="description">
+              Luckily, you can also heal your character by clicking one of your healing potions. You start out with 3, each healing you for 10HP.
+            </p>
+          </div>
+          
+          <div class="scrol-reveal-right">
+            <div class="has-sparkles">
+              <figure>
+                <img src="./assets/images/hb-01.jpg" alt="">
+                <figcaption>The health bar shrinks and changes color as you take damage</figcaption>
+              </figure>
+                <figure>
+                  <img src="./assets/images/attack1.PNG" alt="">
+                  <figcaption>This is what happens when you get attacked</figcaption>
+                </figure>
+                <figure>
+                  <img src="./assets/images/healing.PNG" alt="">
+                  <figcaption>Is it time to drink another healing potion?</figcaption>
+                </figure>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <!-- !WIN / LOSE  -->
+      <div class="container">
+        <div class="section-description d-grid">
+        
+          <div class="scroll-reveal-left">
+            <span class="subtitle-number has-sparkles">04</span>
+            <h2>Win & lose</h2>
+            <p class="description">
+              How does the game determine whether you've won or lost?
+              And what happens after that?
+            </p>
+            <p class="description">
+              Each time you attack your opponent, a check() function is called to check if their health is zero.
+              If this is the case, you've won! The attack() function is immediatly stopped with a return statement. 
+              Then an overlay is made visible, telling you that you won and showing you a gif of your amazing character.
+            </p>
+            <p class="description">
+              When you choose to rematch, the window will be reloaded with location.reload() so you can start all over again.
+            </p>
+          </div>
+          
+          <div class="scrol-reveal-right">
+            <div class="has-sparkles">
+              <figure>
+                  <img src="./assets/images/endgames-01.jpg" alt="">
+                  <figcaption>This code determines who won the game</figcaption>
+              </figure>
+              <figure>
+                <img src="./assets/images/victory.PNG" alt="">
+                <figcaption></figcaption>
+              </figure>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <!-- !PRESENTING  -->
+      <div class="container">
+        <div class="section-description d-grid">
+        
+          <div class="scroll-reveal-left">
+            <span class="subtitle-number has-sparkles">05</span>
+            <h2>Final product</h2>
+            <p class="description">
+              Take a look at the final game!
+            </p>
+            <video width="800" controls poster="./assets/images/game.PNG">
+              <source src="./assets/images/gamedemo.mp4" type="video/mp4">
+              Your browser does not support this video.
+            </video> 
+          </div>     
+        </div>
+      </div>
+      
+    </main>  
+    <!-- !FOOTER -->
+    <footer class="footer">
+      <div class="footer-container container">
+        <div class="social-media">
+          <ul class="list">
+            <li class="list-item">
+              <a href="mailto: robinvanrooij@live.nl" class="list-link">
+                <i class="bx bxl-gmail"></i>
+              </a> 
+            </li>
+            <li class="list-item">
+              <a href="https://github.com/rarooij98" target="_blank" class="list-link">
+                <i class="bx bxl-github"></i>
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="https://www.linkedin.com/in/robin-van-rooij-736405145/" target="_blank" class="list-link">
+                <i class="bx bxl-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- copyright
+        <span>&copy; 2022 Robin van Rooij.</span>
+        -->
+        
+        <a href="#home" class="scroll-top">
+          <i class="bx bx-chevron-up"></i> Back to top
+        </a>
+      </div>
+    </footer>
+    <!-- !MY SCRIPT -->
+    <script src="./assets/js/app.js" type="text/javascript"></script>
+</body>
+</html>

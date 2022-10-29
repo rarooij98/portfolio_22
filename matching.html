@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robins Portfolio</title>
+    <link rel="shortcut icon" type="image/png" href="./assets/images/bunny.png"/>
+    <!-- !BOX ICONS -->
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- !SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <!-- !MY STYLESHEET -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body id="project">
+    <!-- !HEADER -->
+    <header class="header" id="home">
+      <nav class="navbar container">
+        <a href="./index.html" class="logo">Robins Portfolio</a>
+        <div class="navbar-buttons">
+          <button type="button" class="button icon-button menu-toggle-button">
+            <i class="bx bx-menu open-icon"></i>
+            <i class="bx bx-x close-icon"></i>
+          </button>
+          <button type="button" class="button icon-button theme-toggle-button">
+            <i class="bx bx-toggle-left theme-off"></i>
+            <i class="bx bx-toggle-right theme-on"></i>
+          </button>
+        </div>
+        <div class="menu">
+          <ul class="list">
+            <li class="list-item">
+              <a href="index.html#about-me" class="list-link">
+                <span>01</span> About me
+              </a>    
+            </li>
+            <li class="list-item">
+              <a href="index.html#skills" class="list-link">
+                <span>02</span> Skills
+              </a>    
+            </li>
+            <li class="list-item">
+              <a href="index.html#portfolio" class="list-link">
+                <span>03</span> Projects
+              </a>    
+            </li>
+            <li class="list-item">
+              <a href="index.html#contact" class="list-link">
+                <span>04</span> Contact
+              </a>    
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+    <!-- !HERO SECTION -->
+    <section class="hero section">
+      <div class="container">
+        <h1 class="title main-title">
+        School Match<span class="has-sparkles-alt"></span>
+        </h1>
+        <h2>Web design & development (HTML, CSS, JS, MongoDB)</h2>
+      </div>
+    </section>
+    
+    <!-- !ABOUT THE PROJECT -->
+    <section class="section">
+      <div class="container">
+      
+        <div class="section-description d-grid about align">
+          <div class="scroll-reveal-left">
+            <h2>What was the project about?</h2>
+            <p class="description">
+              Deciding where and what to study can be hard.
+              Our matching app SchoolMatch helps students looking for a new education by matching them with schools that align with their interests.
+              This is a web app build with HTML, CSS & Javascript. We used MongoDB to handle our database, Github for version control & we used the MVC (model-view-controller) model.
+            </p>
+            <p class="description">
+              This is how it works: from a personal account, you can set your preferences. Do you want to study a certain subject, or do you need to be in a certain city? 
+              This will then match you to a number of schools you might like. You can then chat with a representative from a school you may be interested in to ask questions and gather more information.
+            </p>
+            <p class="description">
+              During this project we worked in a team of 6. First, each team member took on building one part of the app. Later we merged these parts into a coherent whole.
+              This helped us to learn more about version control and how to communicate effectively when working together on a project.
+            </p>
+            <p class="description">
+              You can read more about our design proces in the next section. 👇🏼
+            </p>
+          </div>
+          <div class="scrol-reveal-right">
+            <div class="has-sparkles">
+              <img src="./assets/images/student.jpg" alt="">
+              <img src="./assets/images/matching1.PNG" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- !LINKS TO GITHUB/LIVE PRODUCT/VIDEO/DR -->
+        <div class="tech-stack d-grid">
+          <a href="https://github.com/rarooij98/bt_team4" target="_blank">
+            <div class="tech-stack-item" data-tooltip="Github repo">
+              <i class="bx bxl-github"></i>
+            </div>
+          </a>
+          <a href="https://github.com/rarooij98/bt_team4/wiki" target="_blank">
+            <div class="tech-stack-item" data-tooltip="Product wiki">
+              <i class='bx bx-book-bookmark'></i>
+            </div>
+          </a>
+          <a href="https://pacific-taiga-01066.herokuapp.com/" download target="_blank">
+            <div class="tech-stack-item" data-tooltip="Live web app">
+              <i class="bx bxl-heroku"></i>
+            </div>
+          </a>
+        </div>
+        
+      </div>
+    </section>
+    
+    <!-- !TASKS -->
+      <div class="container">
+        <div class="section-description d-grid">
+    
+          <div class="scroll-reveal-left">
+            <span class="subtitle-number has-sparkles">01</span>
+            <h2>Teamwork</h2>
+            <p class="description">
+              Our team started this project by dividing the tasks: who will be responsible for what part of the app?
+            </p>
+            <p class="description">
+              We started with 4 people working together on the Register and Login functions that were needed to make an account. These 4 also all had an individual task related to the login function:
+            </p>
+            <ol class="description">
+              <li>Making it possible to change login data (email & password)</li>
+              <li>Login with Google using Passport</li>
+              <li>Sending a confirmation email with Nodemailer after you've registered</li>
+              <li>Logging out, starting/ending sessions</li>
+            </ol>
+            <p class="description">
+              In the meantime one of us focussed on getting info from the form and then displaying the right matches.
+              Another team member worked on building a chat where users could talk to representatives of the schools.
+            </p>
+          </div>
+          
+          <div class="scrol-reveal-right">
+            <div class="has-sparkles">     
+              <figure>
+                <img src="./assets/images/register2.png" alt="">
+                <figcaption>Registering an account for SchoolMatch</figcaption>
+              </figure>
+            </div>
+            <figure>
+              <img src="./assets/images/google.PNG" alt="">
+              <figcaption>Setting up Google authentication</figcaption>
+            </figure>
+          </div>
+          
+        </div>
+      </div>
+      
+      <!-- !REQ RES -->
+      <div class="container">
+        <div class="section-description d-grid align">
+        
+          <div class="scroll-reveal-left">
+            <span class="subtitle-number has-sparkles">02</span>
+            <h2>Request & Response</h2>
+            <p class="description">
+              It was my task to design a form and show the user the right matches from our database of schools.
+            </p>
+              
+            <p class="description">
+             First, some schools had to be added to our database. I added about 15 local schools with data about their location, level of education and study subjects.
+             When there is a request, all schools get pulled from the database. To filter this data, I wrote a filter function.
+            </p>
+            
+            <p class="description">
+              First I had to get the input from the form. 
+              For example, to get the requirements for the education level, I had to put name="niveau" in the form where the value gets chosen. 
+              Then I referenced this piece of input in the controller with this code:
+              <code class="code">niveau: req.body.niveau</code>
+            </p>
+            <p class="description">
+              Then I could reference 'niveau' again to add it to a query, like so: 
+              <code>const queryNiveau = {niveau: keuze.niveau};</code>
+              <code>const query = {...queryLocatie, ...queryNiveau, ...queryOnderwerp};</code>
+              This query is then applied on all schools:
+              <code>const filtered = await scholen.find(query, null, options).lean();</code>
+              All schools that meet the requirements of the query are then rendered on the results page, like this: 
+              <code>res.render('matches', {scholen: filtered});</code>
+            </p>
+            
+            <p class="description">
+              Finally, in the view, I used Handlebars to load the dynamic data into the page.
+              I wanted to display the name, location, level and subjects of each school.              
+              For example, the niveau of each school would be loaded like this:
+              <code>{{#each scholen}} ... {{this.niveau}}</code>
+              Now the user can see a list of all the schools that fit their requirements,
+              each school including a button that links to a chat. 💬
+            </p>
+          </div>
+          
+          <div class="scrol-reveal-right">
+            <div class="has-sparkles">
+              <figure>
+                <img src="./assets/images/schoolarray.PNG" alt="">
+                <figcaption>Example of a school document in our database</figcaption>
+              </figure>
+              <figure>
+                <img src="./assets/images/matching1s.PNG" alt="">
+                <figcaption>Fill in the form to get matches</figcaption>
+              </figure>
+              <figure>
+                <img src="./assets/images/niveau.PNG" alt="">
+                <figcaption>A value gets chosen for 'niveau' in the form</figcaption>
+              </figure>
+              <figure>
+                <img src="./assets/images/matching2.PNG" alt="">
+                <figcaption>A list of matches appears after searching</figcaption>
+              </figure>
+              <figure>
+                <img src="./assets/images/chat.PNG" alt="">
+                <figcaption>Join the chat to ask questions about the school</figcaption>
+              </figure>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <!-- !MERGING -->
+      <div class="container">
+        <div class="section-description d-grid">
+        
+          <div class="scroll-reveal-left">
+            <span class="subtitle-number has-sparkles">03</span>
+            <h2>Merging & Hosting</h2>
+            <p class="description">
+              When all components were ready, it was time to merge our branches! 🎉
+            </p>
+            <p class="description">              
+              We added each function branch one by one to our development branch. We had some minor merge conflicts that we had to correct manually, but luckily no big issues.
+            </p>
+            <p class="description">
+              Then we did one last test on our development branch to make sure everything was still working correctly, before merging it to main.
+            </p>
+            <p class="description">
+              Once our project was in main, we were ready to host our project. We used Heroku to host our project on this adress: <a href="https://pacific-taiga-01066.herokuapp.com/" target="_blank">pacific-taiga-01066.herokuapp.com</a>.
+            </p>
+          </div>
+          
+          <div class="scrol-reveal-right">
+            <div class="has-sparkles">
+                <figure>
+                  <img src="./assets/images/branches.png" alt="">
+                  <figcaption>Timeline of commits to our repository <a href="https://github.com/rarooij98/bt_team4/network" target="_blank">>watch on github</a> </figcaption>
+                </figure>
+                <figure>
+                  <img src="./assets/images/merged.PNG" alt="">
+                  <figcaption>Merging one of our branches</figcaption>
+                </figure>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <!-- !TESTING  -->
+      <div class="container">
+        <div class="section-description d-grid">
+        
+          <div class="scroll-reveal-left">
+            <span class="subtitle-number has-sparkles">04</span>
+            <h2>Testing</h2>
+            <p class="description">
+              I also wrote some tests for my part of the project. 
+              Writing tests for your application can save you a lot of time and effort in the long run, because you don't have to 
+              manually try every function in the browser after you've modified something in your code.
+            </p>
+            <p class="description">
+              There are several testing frameworks with which you can test a node.js app before deployment.
+              I wrote my tests using Mocha. ☕ Mocha uses third-party assertions, mocking and spying tools such as the assertion library Chai. 
+              It supports many different libraries, this makes it a very flexible framework. 
+            </p>
+            <p class="description">
+              I wanted to test whether information could reliably be posted and retrieved from the database (I kept checking it manually while coding). 
+              That's why I tested the POST and GET routes of our project. For example, I let the POST-test post a test document to the database. 
+              And for the GET-route I tested whether the response has a status '200', which means something was found.
+            </p>
+          </div>
+          
+          <div class="scrol-reveal-right">
+            <div class="has-sparkles">
+              <figure>
+                  <img src="./assets/images/get-test.PNG" alt="">
+                  <figcaption>Testing the GET-route with Mocha</figcaption>
+              </figure>
+              <figure>
+                <img src="./assets/images/test-passing.png" alt="">
+                <figcaption>In our terminal we can see the code has passed the test</figcaption>
+              </figure>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <!-- !FINAL PRODUCT  -->
+      <div class="container">
+        <div class="section-description d-grid">
+        
+          <div class="scroll-reveal-left">
+            <span class="subtitle-number has-sparkles">05</span>
+            <h2>Final product</h2>
+            <p class="description">
+              Take a look at our final product!
+            </p>
+            <video width="800" controls poster="./assets/images/matching2.PNG">
+              <source src="./assets/images/schoolmatch_demo.mp4" type="video/mp4">
+              Your browser does not support this video.
+            </video> 
+          </div>     
+        </div>
+      </div>
+      
+    </main>  
+    <!-- !FOOTER -->
+    <footer class="footer">
+      <div class="footer-container container">
+        <div class="social-media">
+          <ul class="list">
+            <li class="list-item">
+              <a href="mailto: robinvanrooij@live.nl" class="list-link">
+                <i class="bx bxl-gmail"></i>
+              </a> 
+            </li>
+            <li class="list-item">
+              <a href="https://github.com/rarooij98" target="_blank" class="list-link">
+                <i class="bx bxl-github"></i>
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="https://www.linkedin.com/in/robin-van-rooij-736405145/" target="_blank" class="list-link">
+                <i class="bx bxl-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- copyright
+        <span>&copy; 2022 Robin van Rooij.</span>
+        -->
+        
+        <a href="#home" class="scroll-top">
+          <i class="bx bx-chevron-up"></i> Back to top
+        </a>
+      </div>
+    </footer>
+    <!-- !MY SCRIPT -->
+    <script src="./assets/js/app.js" type="text/javascript"></script>
+</body>
+</html>
