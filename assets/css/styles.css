@@ -834,6 +834,14 @@ p.description.subtitle.intro{
     transform: translateY(-.8rem);
 }
 
+.succes{
+    text-align: center;
+}
+
+section.succes p.description.subtitle{
+    width: initial;
+}
+
 /*!MODAL STYLES*/
 .modal{
     position: fixed;
