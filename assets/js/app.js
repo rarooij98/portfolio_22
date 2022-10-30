@@ -82,7 +82,7 @@ var ImagesF = [
   './assets/images/projects/projects-6.png',
   './assets/images/projects/projects-7.png',
   './assets/images/projects/projects-8.png',
-  './assets/images/projects/projects-9.png'
+  /*'./assets/images/projects/projects-9.png' */
 ]
 
 var span = document.getElementById('hero');
