@@ -1108,7 +1108,7 @@ code {
     }
     
     #project video{
-        min-width: 350px;
+        max-width: 350px;
     }
     
     .container{
@@ -1126,6 +1126,10 @@ code {
     
     .start .subtitle{  
         font-size: 1.2rem;
+    }
+    
+    .active.menu ul{
+        margin-left: initial;
     }
 }
 
@@ -1153,6 +1157,10 @@ code {
         width: 80vw;
     }
     
+    #project .hero.section{
+        width: initial;
+    }
+    
     #about-me h2{
         width: auto;
     }
@@ -1171,6 +1179,10 @@ code {
     
     .section.about-me{
         padding-block-start: 2rem;
+    }
+    
+    #project video{
+        max-width: 300px;
     }
     
 }

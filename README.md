@@ -1,2 +1,2 @@
-# portfolio
-Portfolio website 2022
+# My portfolio
+Hi! This is a portfolio website I made 😊
