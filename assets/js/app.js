@@ -77,12 +77,13 @@ var ImagesF = [
   './assets/images/projects/projects-1.png',
   /*'./assets/images/projects/projects-2.png',*/
   './assets/images/projects/projects-3.png',
-  './assets/images/projects/projects-4.png',
+  './assets/images/projects/projects-4.JPEG',
   './assets/images/projects/projects-5.png',
-  './assets/images/projects/projects-6.png',
+  /*'./assets/images/projects/projects-6.png',*/
   './assets/images/projects/projects-7.png',
   './assets/images/projects/projects-8.png',
-  /*'./assets/images/projects/projects-9.png' */
+  /*'./assets/images/projects/projects-9.png', */
+  './assets/images/projects/projects-10.jpg'
 ]
 
 var span = document.getElementById('hero');
