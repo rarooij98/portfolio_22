@@ -77,7 +77,7 @@ var ImagesF = [
   './assets/images/projects/projects-1.png',
   /*'./assets/images/projects/projects-2.png',*/
   './assets/images/projects/projects-3.png',
-  './assets/images/projects/projects-4.JPEG',
+  './assets/images/projects/projects-4.jpeg',
   './assets/images/projects/projects-5.png',
   /*'./assets/images/projects/projects-6.png',*/
   './assets/images/projects/projects-7.png',
